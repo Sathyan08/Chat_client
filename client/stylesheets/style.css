@@ -1,0 +1,36 @@
+.navbar {
+  margin-bottom: 10px; }
+  /* line 32, ../sass/style.scss */
+  .navbar .navbar-inner {
+    -webkit-border-radius: 0px 0px 3px 3px;
+    -moz-border-radius: 0px 0px 3px 3px;
+    -ms-border-radius: 0px 0px 3px 3px;
+    -o-border-radius: 0px 0px 3px 3px;
+    border-radius: 0px 0px 3px 3px;
+  }
+
+#spinner {
+  height: 300px;
+}
+
+body {
+  background: #eee;
+  color: #666666;
+}
+
+.listing{
+  position: relative;
+  opacity: 1;
+  background-color: white;
+
+}
+
+  .listing .listing-content {
+    margin: 1%;
+  }
+
+    .listing-content:before,  .listing-content:after{
+      content:" ";
+      display: table;
+
+    }
