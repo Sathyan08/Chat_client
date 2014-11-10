@@ -1,14 +1,6 @@
-var chatData = [
-  {
-    title: "Team Discovery Channel",
-    description: "Spring forth burly protector! Discuss the Simpsons"
-
-  },
-  {
-    title: "Macho Business Donkey Wrestling",
-    description: "Discuss the autobiography of Jimmy James from News Radio"
-  }
-];
+var chatData = function(){
+    return Chatrooms.find();
+  };
 
 Template.chatroomList.helpers({
   chatrooms: chatData
