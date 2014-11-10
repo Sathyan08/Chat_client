@@ -34,3 +34,15 @@ body {
       display: table;
 
     }
+
+  .listing .discuss {
+      display: block;
+      float: right;
+      padding-bottom: 1%;
+     }
+
+      .listing .discuss:before,  .listing .discuss:after{
+      content:" ";
+      display: table;
+
+    }
