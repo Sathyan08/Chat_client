@@ -2,12 +2,15 @@
   margin-bottom: 10px; }
   /* line 32, ../sass/style.scss */
   .navbar .navbar-inner {
-    -webkit-border-radius: 0px 0px 3px 3px;
-    -moz-border-radius: 0px 0px 3px 3px;
-    -ms-border-radius: 0px 0px 3px 3px;
-    -o-border-radius: 0px 0px 3px 3px;
     border-radius: 0px 0px 3px 3px;
   }
+
+.main{
+  background: #fff;
+  border-radius: 3px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15); }
 
 #spinner {
   height: 300px;
@@ -41,8 +44,3 @@ body {
       padding-bottom: 1%;
      }
 
-      .listing .discuss:before,  .listing .discuss:after{
-      content:" ";
-      display: table;
-
-    }
