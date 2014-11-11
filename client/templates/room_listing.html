@@ -4,6 +4,13 @@
       <h3>{{title}}<span><a href="{{pathFor 'chat'}}" class="discuss btn btn-default">Discuss</a></span></h3>
       <p>{{description}}</p>
 
+
+      <p>
+        submitted by {{author}}
+        {{#if ownRoom}}<a href="{{pathFor 'roomEdit'}}">Edit</a>{{/if}}
+      </p>
+
+
     </div>
   </div>
 </template>
