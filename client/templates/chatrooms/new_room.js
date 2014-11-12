@@ -22,3 +22,16 @@ Template.newRoom.events({
     });
   }
 });
+
+Template.newRoom.created = function() {
+  Session.set('newRoomErrors', {});
+}
+
+Template.newRoom.helpers({
+  errorMessage: function(field) {
+    return Session.get('newRoomErrors')[field];
+  },
+  errorClass: function (field) {
+    return !!Session.get('newRoomErrors')[field] ? 'has-error' : '';
+  }
+});
