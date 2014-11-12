@@ -12,7 +12,7 @@ Template.roomEdit.events({
     Chatrooms.update(currentRoomId, {$set: roomProperties}, function(error) {
       if (error) {
         // display the error to the user
-        alert(error.reason);
+           throwError(error.reason);
       } else {
         Router.go('chat', {_id: currentRoomId});
       }
