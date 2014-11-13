@@ -1,3 +1,7 @@
+Template.newRoom.created = function() {
+  Session.set('newRoomErrors', {});
+}
+
 Template.newRoom.events({
   'submit form': function(e) {
     e.preventDefault();
@@ -7,8 +11,6 @@ Template.newRoom.events({
       description: $(e.target).find('[name=description]').val()
     };
 
-    // room._id = Chatrooms.insert(room);
-    // Router.go('chat', room);
     Meteor.call('roomInsert', room, function(error, result) {
       // display the error to the user and abort
       if (error)
@@ -22,10 +24,6 @@ Template.newRoom.events({
     });
   }
 });
-
-Template.newRoom.created = function() {
-  Session.set('newRoomErrors', {});
-}
 
 Template.newRoom.helpers({
   errorMessage: function(field) {

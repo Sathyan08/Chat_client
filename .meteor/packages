@@ -8,6 +8,5 @@ underscore
 mizzao:bootstrap-3
 iron:router
 sacha:spin
-autopublish
 ian:accounts-ui-bootstrap-3
 accounts-password
