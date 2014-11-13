@@ -2,6 +2,6 @@ Meteor.publish('chatrooms', function() {
   return Chatrooms.find();
 });
 
-// Meteor.publish('comments', function() {
-//   return Comments.find();
-// });
+Meteor.publish('messages', function() {
+  return Messages.find();
+});
