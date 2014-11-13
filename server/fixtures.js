@@ -62,7 +62,7 @@ if (Chatrooms.find().count() === 0) {
     userId: sathyan._id,
     submitted: new Date(now)
   });
-};
+}
 
 
 // if (Chatrooms.find().count() === 0){
