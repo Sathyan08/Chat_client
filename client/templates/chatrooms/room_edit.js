@@ -1,3 +1,16 @@
+Template.roomEdit.created = function() {
+  Session.set('roomEditErrors', {});
+}
+Template.roomEdit.helpers({
+  errorMessage: function(field) {
+    return Session.get('roomEditErrors')[field];
+  },
+  errorClass: function (field) {
+    return !!Session.get('roomEditErrors')[field] ? 'has-error' : '';
+  }
+});
+
+
 Template.roomEdit.events({
   'submit form': function(e) {
     e.preventDefault();
