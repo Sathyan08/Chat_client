@@ -1,3 +1,13 @@
 <template name="chat">
   <h1>This is a chat.</h1>
+  <ul class="messages">
+    {{#each messages}}
+      {{> messageItem}}
+    {{/each}}
+  </ul>
+  {{#if currentUser}}
+    {{> newMessageForm}}
+  {{else}}
+    <p>Please log in to leave a message.</p>
+  {{/if}}
 </template>
