@@ -1,10 +1,12 @@
 <template name="newMessageForm">
   <form name="message" class="message-form form">
-    <div class="controls">
-
-    <input name="body" id="body" type="text" value="" placeholder="Write your new message here" class="form-control"/>
-
-
+    <div class="form-group {{errorClass 'body'}}">
+        <div class="controls">
+            <label for="body">Chat</label>
+            <textarea name="body" id="body" class="form-control" rows="3"></textarea>
+            <span class="help-block">{{errorMessage 'body'}}</span>
+        </div>
     </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
   </form>
 </template>

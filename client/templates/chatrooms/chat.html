@@ -1,5 +1,5 @@
 <template name="chat">
-  <h1>This is a chat.</h1>
+  {{> roomListing}}
   <ul class="messages">
     {{#each messages}}
       {{> messageItem}}
